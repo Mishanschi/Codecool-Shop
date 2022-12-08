@@ -58,7 +58,7 @@ namespace Codecool.CodecoolShop
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Registration}/{action=Register}/{id?}");
+                    pattern: "{controller=Welcome}/{action=Index}/{id?}");
             });
 
         }

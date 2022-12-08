@@ -52,6 +52,13 @@ namespace Codecool.CodecoolShop.Controllers
             
         }
 
+        [HttpGet]
 
+        public IActionResult logout()
+        {
+            HttpContext.Session.Remove("username");
+            HttpContext.Session.Remove("id");
+            return Redirect("/Registration/LogIn");
+        }
     }
 }

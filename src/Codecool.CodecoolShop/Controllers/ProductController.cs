@@ -48,7 +48,6 @@ namespace Codecool.CodecoolShop.Controllers
         public IActionResult Cart()
         {
             var products = ProductService.GetALlProducts();
-            var aaa = Request.Form["name"];
             return View("Index", products.ToList());
         }
 

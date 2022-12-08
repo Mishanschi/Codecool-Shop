@@ -142,7 +142,7 @@ namespace Codecool.CodecoolShop.Controllers
                     returnProducts.Add(product);
                 }
             }
-
+            ViewBag.username = HttpContext.Session.GetString("username");
             returnProducts = returnProducts.Distinct().ToList();
             return View("Index", returnProducts.ToList());
         }

@@ -7,14 +7,54 @@
 
 
 @model List<Codecool.CodecoolShop.Models.ShoppingCart>;
-<div style="width: 120px; height: 300px; left:10px; ">
-    @foreach(var item in Model)
-    {
-    <h5>@item.name</h5>    
-    <h5>@item.quantity</h5>    
-    <h5>@item.defaultPrice</h5>    
-    }
-</div>
+@if (Model.Count > 0)
+{
+
+    <table>
+
+
+        <tr>
+
+
+            <th>
+                Product Name
+            </th>
+            <th>
+                Amount
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                Subtotal
+            </th>
+
+
+        </tr>
+        @{
+            decimal total = 0;
+        }
+        @foreach (var product in Model)
+        {
+
+            <tr>
+
+                <td>@product.name</td>
+
+                <td>@product.defaultPrice</td>
+                <td>@product.quantity </td>
+                <td> @product.subtotal</td>
+
+
+            </tr>
+
+            total += @product.subtotal;
+
+        }
+
+
+    </table>
+}
 <div class="wrapper">
     <div class="container">
         <form action="">

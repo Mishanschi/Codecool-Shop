@@ -27,7 +27,7 @@ namespace Codecool.CodecoolShop.Controllers
         public IActionResult Register(string username,string password)
         {
             registerRepository.InsertUserIntoDb(username, password);
-            return Redirect("Registration/LogIn");
+            return Redirect("LogIn");
         }
 
 

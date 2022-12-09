@@ -11,7 +11,6 @@ namespace Codecool.CodecoolShop.Repositories
 {
     public class ShoppingCartRepository : BaseRepository
     {
-        //private SqlConnection connection;
 
         public ShoppingCartRepository(IConfiguration _configuration) : base(_configuration)
         {

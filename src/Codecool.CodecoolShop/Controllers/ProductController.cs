@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Codecool.CodecoolShop.Models;
-using Codecool.CodecoolShop.Services;
 using System.Security.Cryptography.X509Certificates;
 using System.Runtime.CompilerServices;
 using Codecool.CodecoolShop.Repositories;
@@ -20,8 +19,6 @@ namespace Codecool.CodecoolShop.Controllers
         private readonly ProductRepository productRepository;
         private readonly ShoppingCartRepository shoppingCartRepository;
 
-        public ProductService ProductService { get; set; }
-        public ShoppingCartService shoppingCartService { get; set; } = new();
         
 
         public ProductController(ILogger<ProductController> logger,ProductRepository productRepository,ShoppingCartRepository shoppingCartRepository)
@@ -29,7 +26,6 @@ namespace Codecool.CodecoolShop.Controllers
             _logger = logger;
             this.productRepository = productRepository;
             this.shoppingCartRepository = shoppingCartRepository;
-            ProductService = new ProductService();
         }
 
         [HttpGet]
@@ -43,13 +39,7 @@ namespace Codecool.CodecoolShop.Controllers
             return View(products.ToList());
         }
 
-        [HttpPost]
-        [Route("/Cart")]
-        public IActionResult Cart()
-        {
-            var products = ProductService.GetALlProducts();
-            return View("Index", products.ToList());
-        }
+       
 
         public IActionResult AddToCart(Guid id)
         {

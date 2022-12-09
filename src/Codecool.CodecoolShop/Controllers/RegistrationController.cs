@@ -1,7 +1,6 @@
 ﻿using Codecool.CodecoolShop.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 
 namespace Codecool.CodecoolShop.Controllers

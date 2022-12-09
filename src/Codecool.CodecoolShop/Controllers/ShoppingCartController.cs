@@ -1,6 +1,5 @@
 ﻿using Codecool.CodecoolShop.Models;
 using Codecool.CodecoolShop.Repositories;
-using Codecool.CodecoolShop.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -14,11 +13,9 @@ namespace Codecool.CodecoolShop.Controllers
 
         public Product product = new Product();
         private readonly ShoppingCartRepository shoppingCartRepository;
-        public ProductService ProductService { get; set; } = new ProductService();
 
         public List<Product> products= new List<Product>();
 
-        public ShoppingCartService shoppingCartService= new ShoppingCartService();
 
 
         public ShoppingCartController(ShoppingCartRepository shoppingCartRepository)

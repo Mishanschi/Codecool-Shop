@@ -54,9 +54,16 @@ namespace Codecool.CodecoolShop.Controllers
         public IActionResult AddToCart(Guid id)
         {
             ViewBag.id = HttpContext.Session.GetString("id");
+            if(ViewBag.id is null)
+            {
+                return View("NotLoggedIn");
+            }
+            else
+            {
 
             shoppingCartRepository.InsertIntoShoppingCart(id, ViewBag.id );
             return Redirect("/Index");
+            }
         }
         public IActionResult Privacy()
         {

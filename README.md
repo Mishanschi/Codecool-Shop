@@ -3,8 +3,13 @@
 CodecoolShop is a small online shop that sells a few products. It was built as my first project based on the MVC design pattern, and was my first step towards learning how bigger projects are organized and structured.
 <br/>
 <br/>
+<br/>
+<br/>
 <img src=https://github.com/Mishanschi/Codecool-Shop/blob/misha2/Screenshot_1.png class="img-class">
-
+<br/>
+<br/>
+<br/>
+<br/>
 
 # Getting Started
 To get started with this project, simply clone or download the repository and open the solution file in your IDE. You can then build and run the project from within the IDE.
@@ -18,8 +23,15 @@ CodecoolShop includes the following features:
 View the products available in the shop, along with their name, price, and image.
 ### Shopping cart: 
 Add products to your cart and view the total cost of your order.
+<br/>
+<br/>
+<br/>
+<br/>
 <img src=https://github.com/Mishanschi/Codecool-Shop/blob/misha2/Screenshot_2.png class="img-class">
-
+<br/>
+<br/>
+<br/>
+<br/>
 
 ### Checkout: 
 Enter your shipping and payment details and place your order.

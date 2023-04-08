@@ -1,6 +1,8 @@
 # CodecoolShop
 
 CodecoolShop is a small online shop that sells a few products. It was built as my first project based on the MVC design pattern, and was my first step towards learning how bigger projects are organized and structured.
+<br/>
+<br/>
 <img src=https://github.com/Mishanschi/Codecool-Shop/blob/misha2/Screenshot_1.png class="img-class">
 
 

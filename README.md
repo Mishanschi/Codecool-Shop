@@ -27,7 +27,7 @@ Add products to your cart and view the total cost of your order.
 <br/>
 <br/>
 <br/>
-<img src=https://github.com/Mishanschi/Codecool-Shop/blob/misha2/Screenshot_2.png class="img-class">
+<img src=https://github.com/Mishanschi/Codecool-Shop/blob/misha2/Screenshot_2023-04-11_093736.png class="img-class">
 <br/>
 <br/>
 <br/>
